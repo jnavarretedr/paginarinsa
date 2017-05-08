@@ -100,7 +100,7 @@ header #menuboton{
 
 .main{
 	width: 100%;
-	max-height: 500px;
+	max-height: 550px;
 	margin: 0px auto;
 	position: relative;
 }
@@ -109,13 +109,13 @@ header #menuboton{
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	max-height: 500px;
+	max-height: 550px;
 }
 
 .slides img{
 	width: 100%;
 	height: 100%;
-	max-height:500px;
+	max-height:550px;
 }
 
 .slidesjs-pagination,
@@ -184,6 +184,10 @@ header #menuboton{
 	opacity: 0.7;
 }
 
+section{
+	border: solid 1px red;
+	display: inline-block;
+}
 
 
 
