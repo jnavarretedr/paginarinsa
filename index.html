@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!--Import materialize.css-->
 	<!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+	<!-- Icons -->
+	<link rel="stylesheet" type="text/css" href="css/font/flaticon.css">
 	<!-- Estilos Externos -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Let browser know website is optimized for mobile -->
@@ -64,6 +66,18 @@
 		</nav>
 	</header>
 	
+	<div class="main">
+		<div class="slides">
+			<img src="img/001.jpeg" alt="">
+			<img src="img/002.jpeg" alt="">
+			<img src="img/003.jpeg" alt="">
+			<img src="img/1.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/3.jpg" alt="">
+		</div>
+	</div>
+
+
 	<section>
 	    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aperiam incidunt sunt, temporibus aut eligendi earum neque dolorem, ipsum quae at itaque error? Ex odit laudantium nisi modi labore autem.</p></div>
 	    <div></div>
@@ -75,5 +89,29 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script>
+		$(function(){
+		  $(".slides").slidesjs({
+		    play: {
+		      active: false,
+		        // [boolean] Generate the play and stop buttons.
+		        // You cannot use your own buttons. Sorry.
+		      effect: "fade",
+		        // [string] Can be either "slide" or "fade".
+		      interval: 3500,
+		        // [number] Time spent on each slide in milliseconds.
+		      auto: true,
+		        // [boolean] Start playing the slideshow on load.
+		      swap: true,
+		        // [boolean] show/hide stop and play buttons
+		      pauseOnHover: false,
+		        // [boolean] pause a playing slideshow on hover
+		      restartDelay: 2500
+		        // [number] restart delay on inactive slideshow
+		    }
+		  });
+		});		
+	</script>
 </body>
 </html>
