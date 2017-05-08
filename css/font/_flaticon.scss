@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 02/04/2017 10:40
+    Creation date: 08/05/2017 07:52
     */
 
     @font-face {
@@ -36,12 +36,22 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-arrows-1:before { content: "\f100"; }
-.flaticon-arrows:before { content: "\f101"; }
-.flaticon-right-arrow:before { content: "\f102"; }
-.flaticon-left-arrow:before { content: "\f103"; }
+    .flaticon-facebook-logo-button:before { content: "\f100"; }
+.flaticon-social-twitter-circular-button:before { content: "\f101"; }
+.flaticon-social-facebook-circular-button:before { content: "\f102"; }
+.flaticon-twitter-logo-on-black-background:before { content: "\f103"; }
+.flaticon-linkedin-button:before { content: "\f104"; }
+.flaticon-linkedin-logo:before { content: "\f105"; }
+.flaticon-social-linkedin-circular-button:before { content: "\f106"; }
+.flaticon-twitter-logo-button:before { content: "\f107"; }
+.flaticon-facebook-logotype-button:before { content: "\f108"; }
     
-    $font-Flaticon-arrows-1: "\f100";
-    $font-Flaticon-arrows: "\f101";
-    $font-Flaticon-right-arrow: "\f102";
-    $font-Flaticon-left-arrow: "\f103";
+    $font-Flaticon-facebook-logo-button: "\f100";
+    $font-Flaticon-social-twitter-circular-button: "\f101";
+    $font-Flaticon-social-facebook-circular-button: "\f102";
+    $font-Flaticon-twitter-logo-on-black-background: "\f103";
+    $font-Flaticon-linkedin-button: "\f104";
+    $font-Flaticon-linkedin-logo: "\f105";
+    $font-Flaticon-social-linkedin-circular-button: "\f106";
+    $font-Flaticon-twitter-logo-button: "\f107";
+    $font-Flaticon-facebook-logotype-button: "\f108";
