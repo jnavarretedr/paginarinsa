@@ -1,5 +1,5 @@
 body {
-	background: purple;
+	background: #C82606;
 }
 
 *{
@@ -90,7 +90,7 @@ header #menuboton{
 
 .menu a:hover{
 	background: #FFF;
-    color: #C82606;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -100,7 +100,7 @@ header #menuboton{
 
 .main{
 	width: 100%;
-	max-height: 550px;
+	max-height: 500px;
 	margin: 0px auto;
 	position: relative;
 }
@@ -109,13 +109,13 @@ header #menuboton{
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	max-height: 550px;
+	max-height: 500px;
 }
 
 .slides img{
 	width: 100%;
 	height: 100%;
-	max-height:550px;
+	max-height:500px;
 }
 
 .slidesjs-pagination,
@@ -191,39 +191,39 @@ footer {
 	display: inline-block;
 	width: 100%;
 }
+
 /*
 footer #socialmedia, footer a , footer i{
 	display: inline-block;
 	vertical-align: middle;
 }*/
 
-footer #socialmedia {
+footer #socialmedia a{
+	text-decoration: none;
+}
+footer #socialmedia{
+	text-align: center;
 	position: relative;
-	height: 85%;
-	width: 45%;
-	right: 35px;
-	border: solid yellow 1px;
+	padding: 10px 0px 10px 0px;
+	margin: 5px;
+	/*border-bottom: solid 1px rgba(255,255,255,.5);*/
 }
 
-.flaticon-social-twitter-circular-button::before{
-    content: "\f101";
-    color: #fff;
-    font-size: 35px;
-    cursor: pointer;
-}
-
-.flaticon-social-facebook-circular-button::before{
-    content: "\f102";
-    color: #fff;
-    font-size: 35px;
-    cursor: pointer;
-}
-
+.flaticon-social-twitter-circular-button::before,
+.flaticon-social-facebook-circular-button::before,
 .flaticon-social-linkedin-circular-button::before{
-    content: "\f106";
     color: #fff;
-    font-size: 35px;
+    font-size: 25px;
     cursor: pointer;
+    font-weight: bold;
+    margin:5px 5px;
+    position: relative;
+    width: 20%;
+}
+
+footer #btn-mail{
+	padding: 10px 0px;
+/*	border-bottom: solid 1px rgba(255,255,255,.5);*/	
 }
 
 footer #btn-mail a{
@@ -235,9 +235,10 @@ footer #btn-mail a{
 }
 
 footer #btn-mail .material-icons{
+
 	cursor: pointer;
 	color: #fff;
-	font-size: 35px;
+	font-size: 25px;
 	font-weight: bold;
 	margin: 5px auto;
 	width: 20%;
@@ -246,7 +247,10 @@ footer #btn-mail .material-icons{
 	left: 40%;
 }
 
+
 footer p{
+	margin: 0;
+	padding: 10px 0px;
 	position: relative;
 	display: block;
 	width: 100%;
@@ -318,6 +322,9 @@ footer p{
 		display: block;
 		position: absolute;
 	}
+
+
+
     
     header #menuboton{
     	display: none;
