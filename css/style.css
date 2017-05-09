@@ -71,14 +71,15 @@ header #menuboton{
 	display: none;
 	background: #E32E0A;
 }
+/*Items del sub menu*/
 
 .menu ul ul a{
-	padding: 15px 30px;
+	padding: 10px 30px;
 }
 
 .menu a{
 	display: block;
-	padding: 21px 45px;
+	padding: 15px 20px;
 	color: #fff;
 	text-decoration: none;
 }
@@ -208,7 +209,7 @@ footer #socialmedia{
 	margin: 5px;
 	/*border-bottom: solid 1px rgba(255,255,255,.5);*/
 }
-
+/*
 .flaticon-social-twitter-circular-button::before,
 .flaticon-social-facebook-circular-button::before,
 .flaticon-social-linkedin-circular-button::before{
@@ -220,28 +221,33 @@ footer #socialmedia{
     position: relative;
     width: 20%;
 }
-
+*/
 footer #btn-mail{
-	padding: 10px 0px;
+	padding: 25px 0px;
+	text-align: center;
 /*	border-bottom: solid 1px rgba(255,255,255,.5);*/	
 }
 
 footer #btn-mail a{
-	display: none;
-	border: red solid 1px;
+	margin: 5px 10px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
 	color: #fff;
 	text-decoration: none;
 
 }
 
-footer #btn-mail .material-icons{
+footer #btn-mail .material-icons,
+footer #btn-mail .flaticon-social-twitter-circular-button::before,
+footer #btn-mail .flaticon-social-facebook-circular-button::before,
+footer #btn-mail .flaticon-social-linkedin-circular-button::before{
 
 	cursor: pointer;
 	color: #fff;
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bold;
-	margin: 5px auto;
-	width: 20%;
+	margin: 5px 0;
 	text-align: center;
 	position: relative;
 	left: 40%;
@@ -311,6 +317,11 @@ footer p{
         transform: translateY(0%);
         
 	}
+
+	.menu ul ul a{
+		padding: 17px 30px;
+	}
+
 	.menu a{
 		padding: 23px 40px;
 	}
@@ -330,20 +341,14 @@ footer p{
     	display: none;
 	}
 	
-	footer #socialmedia, #btn-mail, footer p{
+	footer #btn-mail, footer p{
 		display: block;
-	}
-
-	footer #social-media{
-		height: 85%
-		width: 45%;
-		border: solid blue 1px;
 	}
 	
 	footer #btn-mail{
 		float: right;
 		height: 85%;
-		width: 45%;
+		width:100%;
 		right: 35px;
 		border: solid yellow 1px;
 	}
