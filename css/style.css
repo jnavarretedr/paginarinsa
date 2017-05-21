@@ -1,32 +1,31 @@
+	
+	body {
+	background : #fff;
+	}
 
-body {
-	background: #fff;
-	padding-top: 54px;
-}
-
-*{
-	margin: 0;
-	padding:0;
+	*{
+	margin    : 0;
+	padding   : 0;
 	box-sizing: border-box;
-}
+	}
 
 header {
-	z-index: 999;
-	top: 0px;
-	height: 54px;
-	width: 100%;
-	background: #C82606;
-	position: fixed;
-    -webkit-box-shadow: 0px 1px 5px #666161;
+	z-index           : 999;
+	top               : 0px;
+	height            : 54px;
+	width             : 100%;
+	background        : #C82606;
+	position          : fixed;
+	-webkit-box-shadow: 0px 1px 5px #666161;
 }
 
 header #logo {
-    position: absolute;
-    left: 15px;
+	position: absolute;
+	left    : 15px;
 }
 
 header #logo img{
-	width: 54px;
+	width : 54px;
 	height: 54px;
 }
 
@@ -35,30 +34,30 @@ header #logo img{
 }
 
 header #logo img,header .material-icons{
-	display: inline-block;
+	display       : inline-block;
 	vertical-align: middle;
 }
 
 
 header #menuboton{
-	display: block;
-	font-size: 34px;
-	cursor: pointer;
-	overflow: hidden;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: #fff;
-    font-weight: bold;
+	display    : block;
+	font-size  : 34px;
+	cursor     : pointer;
+	overflow   : hidden;
+	position   : absolute;
+	right      : 15px;
+	top        : 10px;
+	color      : #fff;
+	font-weight: bold;
 }
 
 .menu {
-	z-index: 999;
-	position: absolute;
-	top: 54px;
-	left: 0px;
-	width: 100%;
-	transform: translateX(-100%);
+	z-index   : 999;
+	position  : absolute;
+	top       : 54px;
+	left      : 0px;
+	width     : 100%;
+	transform : translateX(-100%);
 	transition: all 0.3s;
 }
 
@@ -103,10 +102,10 @@ header #menuboton{
 #btn-menu:checked ~ .menu{
 	transform: translateY(0%);
 }
-/*
+
 body:nth-child(2){
 	padding-top: 54px;
-}*/
+}
 
 .cajas {
 	display: inline-block;
@@ -130,7 +129,6 @@ body:nth-child(2){
 
 section{
 	padding-bottom: 30px;
-	display: inline-block;
 	margin: 0;
     -webkit-box-shadow: 0px 1px 5px #666161;
 }
@@ -138,6 +136,13 @@ section{
 
 
 section .sectionleft .sectionName{
+	font-weight: bold;
+	padding: 15px 7%;
+	color: #000000;
+	font-size: 1em;
+}
+
+section .sectionName{
 	font-weight: bold;
 	padding: 15px 7%;
 	color: #000000;
@@ -162,6 +167,54 @@ section #sectionright img{
 	padding: 0;
 	width: 100%;
 	height: 100%;
+}
+
+#equipo{
+	display: block;
+	width: 100%;
+}
+
+#equipo .team1, #equipo .team{
+}
+
+
+#equipo div div .perfil{
+	display: block;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	background-image: url(../img/2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 20px auto;
+}
+
+#equipo div div{
+	text-align: center;
+}
+
+#equipo div div p{
+	width: 80%;
+	display: inline-block;
+}
+
+#equipo div div p a{
+	text-decoration: none;
+}
+
+#equipo div div p a .flaticon-social-linkedin-circular-button:after {
+	content: "";
+}
+
+#equipo div div p a .flaticon-social-linkedin-circular-button:before {
+	font-size: 30px;
+	color: #0077B5;
+}
+
+#equipo div div .perfil, #equipo div div p{
+	display: inline-block;
+	vertical-align: middle;
 }
 
 
@@ -335,7 +388,7 @@ footer p{
 
 @media screen and (min-width: 480px){
 	body{
-		background: green;
+		background: #fff;
 	}
 
 	.cajas {
@@ -348,7 +401,7 @@ footer p{
 
 @media screen and (min-width: 600px){
 	body{
-		background: yellow;
+		background: #fff;
 	}
 
 }
@@ -505,3 +558,7 @@ footer p{
 
     
 }
+
+
+2017jg
+
