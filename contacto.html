@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>RINSA</title>
+	<title>RINSA | Nosotros</title>
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 	<!-- Normalize -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Icons -->
 	<link rel="stylesheet" type="text/css" href="css/font/flaticon.css">
 	<!-- Estilos Externos -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Let browser know website is optimized for mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<!-- Modernizr -->
-	<script type="text/javascript" src="js/modernizr-custom.js"></script>
-
 </head>
+
 <body>
 	<header>
 		<a href="index.html" id="logo"><img src="img/Logo Rinsa.001.png"></a>
@@ -66,58 +65,45 @@
 		</nav>
 	</header>
 	
-	<div class="main">
-		<div class="slides">
-			<img src="img/001.jpeg" alt="">
-			<img src="img/002.jpeg" alt="">
-			<img src="img/003.jpeg" alt="">
-			<img src="img/1.jpg" alt="">
-			<img src="img/2.jpg" alt="">
-			<img src="img/3.jpg" alt="">
-		</div>
-	</div>
-	
-	<div>
-		<div class="cajas"></div>
-		<div class="cajas"></div>
-		<div class="cajas"></div>
-		<div class="cajas"></div>
+	<div id="contacto">
+		<h4>Hola_</h4>
+		<form>
+			<div>
+				<label for="name">Nombre</label>
+				<input type="text" name="name" required="">
+			</div>
+
+			<div>
+				<label for="dni">Documento de Identidad</label>
+				<input type="text" name="dni" required="">
+			</div>
+
+			<div>
+				<label for="email">Correo Electrónico</label>
+				<input type="email" name="email" required="">
+			</div>
+
+			<div>
+				<label for="mensaje">¿Cómo podemos ayudarte?</label>
+				<textarea name="mensaje" placeholder="Escribe aquí tu mensaje" required=""></textarea>
+			</div>
+
+			<div id="botonEnviar">
+				<input type="submit" value="Enviar">
+			</div>
+
+		</form>
 	</div>
 
 	<footer>
 		<div id="btn-mail">
 				<a href="https://www.facebook.com/rinsacorp"><i class="flaticon-social-facebook-circular-button"></i></a>
 				<a href="#"><i class="flaticon-social-linkedin-circular-button"></i></a>
-			<a href="contacto.html"><i class="material-icons">forum</i></a>
+			<a href=""><i class="material-icons">forum</i></a>
 			
 		</div>
 		<p>© 2017 Copyright RINSACORP. All rights reserved</p>
 		
 	</footer>
-	<script src="js/main.js"></script>
-	<script src="js/jquery.slides.js"></script>
-	<script>
-		$(function(){
-		  $(".slides").slidesjs({
-		    play: {
-		      active: false,
-		        // [boolean] Generate the play and stop buttons.
-		        // You cannot use your own buttons. Sorry.
-		      effect: "fade",
-		        // [string] Can be either "slide" or "fade".
-		      interval: 4000,
-		        // [number] Time spent on each slide in milliseconds.
-		      auto: true,
-		        // [boolean] Start playing the slideshow on load.
-		      swap: true,
-		        // [boolean] show/hide stop and play buttons
-		      pauseOnHover: false,
-		        // [boolean] pause a playing slideshow on hover
-		      restartDelay: 2500
-		        // [number] restart delay on inactive slideshow
-		    }
-		  });
-		});		
-	</script>
 </body>
 </html>

@@ -5,21 +5,21 @@ body {
 }
 
 *{
+	box-sizing: border-box;
 	margin    : 0;
 	padding   : 0;
-	box-sizing: border-box;
 }
 
-/*Menú de navegación*/
+/** Menú de navegación **/
 
 header {
-	z-index           : 999;
-	top               : 0px;
-	height            : 54px;
-	width             : 100%;
-	background        : #C82606;
-	position          : fixed;
 	-webkit-box-shadow: 0px 1px 5px #666161;
+	background        : #C82606;
+	height            : 54px;
+	position          : fixed;
+	top               : 0px;
+	width             : 100%;
+	z-index           : 999;
 }
 
 header #logo {
@@ -257,6 +257,33 @@ section #sectionright img{
 	vertical-align: middle;
 }
 
+#mInfo .sectionDesc {
+	text-align: left;
+}
+
+#mInfo .sectionDesc div{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+#mInfo .sectionDesc div *{
+	vertical-align: middle;
+}
+
+#mInfo .sectionDesc div a{
+	color: #000000;
+	display: block;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 10px;
+}
+
+#mInfo .sectionDesc div a i{
+	color: #c82606;
+	padding-left: 5px;
+	padding-right: 10px;
+}
 
 .main{
 	width: 100%;
@@ -347,6 +374,68 @@ section #sectionright img{
 	opacity: 0.7;
 }
 
+#contacto {
+	margin-top: 5px;
+}
+
+#contacto h4{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+#contacto form{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+#contacto form div input, #contacto form div label, #contacto form div textarea{
+	width: 100%;
+}
+
+#contacto form div input, #contacto form div textarea{
+	padding: 7px;
+	margin-top: 5px;
+	margin-bottom: 17px;
+	box-sizing: border-box;
+	font-size: 15px;
+	border: solid 1px rgba(0,0,0,0.2);
+}
+
+#contacto form div textarea{
+	max-width: 100%;
+	min-height: 200px;
+	max-height: 300px;
+}
+
+#contacto form div label{
+	font-size: 15px;
+}
+
+#contacto form #botonEnviar{
+	width: 100px;
+	margin: auto;
+}
+
+#contacto form #botonEnviar input{
+	background: #C82606;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#contacto form #botonEnviar input:hover{
+	background: #fff;
+	color: #C82606;
+	cursor: pointer;
+	border: solid 1px rgba(0,0,0,0.2);
+}
+
+
 footer {
 	background: #C82606;
 	display: inline-block;
@@ -406,6 +495,35 @@ footer p{
 	.cajas {
 	display: inline-block;
 	height: 200px;
+	}
+
+	#mInfo .sectionDesc {
+		overflow: hidden;
+		display: block;
+	}
+
+	#mInfo .sectionDesc div{
+		width: 45%;
+		float: left;
+		margin: 10px 2.5%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	#mInfo .sectionDesc div *{
+		vertical-align: middle;
+	}
+
+	#mInfo .sectionDesc div a{
+		display: block;
+		font-size: 15px;
+		text-decoration: none;
+		padding: 10px;
+	}
+
+	#mInfo .sectionDesc div a i{
+		padding-left: 5px;
+		padding-right: 10px;
 	}
 
 }
@@ -532,6 +650,16 @@ footer p{
 		display: inline-block;
 		vertical-align: middle;
 	}
+
+	#mInfo{
+		overflow: hidden;
+	}
+	
+	#mInfo .sectionleft{
+		width: 100%;
+		height: auto;
+	}
+
 }
 	
 
@@ -627,23 +755,35 @@ footer p{
 		margin: 1% 2.5%;
 		text-align: center;
 		display: inline-block;
+	}*/
+
+	#equipo .team div .perfil{
+		display: inline-block;
+		width: 125px;
+		height: 125px;
+		border-radius: 50%;
+		background-image: url(../img/2.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin: 20px auto;
 	}
-*/
+
 	#equipo .team1 div p{
 		width: 80%;
 		font-size: 17px;
 		display: inline-block;
 	}
-	/*#equipo .team div{
-		width: 25%;
-		margin: 1% 4%;
+	#equipo .team div{
 		text-align: center;
 		display: inline-block;
-	}*/
-
+		vertical-align: middle;
+	}
+	
 	#equipo .team div p{
+		text-align: center;
 		font-size: 15px;
-		width: 80%;
+		width: 60%;
 		display: inline-block;
 	}
 
@@ -669,8 +809,28 @@ footer p{
 		display: inline-block;
 		vertical-align: middle;
 	}
-}
-	
+
+	#mInfo .sectionDesc div{
+		width: 31%;
+		margin: 10px 1%;
+	}
+
+	#mInfo .sectionDesc div *{
+		vertical-align: middle;
+	}
+
+	#mInfo .sectionDesc div a{
+		display: block;
+		font-size: 15px;
+		text-decoration: none;
+		padding: 10px;
+		border: solid red 1px;	
+	}
+
+	#mInfo .sectionDesc div a i{
+		padding-left: 5px;
+		padding-right: 10px;
+	}
 
 
 	footer #btn-mail, footer p{
